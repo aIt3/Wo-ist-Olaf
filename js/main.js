@@ -1,8 +1,10 @@
 const game = new Game() 
 
 function setup(){
-    createCanvas(1200, 500)
+    createCanvas(500, 500)
     background('white')
+	frameRate(7)
+
 }
 function preload() {
 	game.preload()
@@ -10,9 +12,4 @@ function preload() {
 function draw(){
     game.draw()
 
-}
-function keyPressed() {
-	if (keyCode === 32) {
-		game.player.power()
-	}
 }
