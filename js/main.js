@@ -16,6 +16,6 @@ function draw(){
 // WENN OLAF GEFANGEN WIRD SAG WHOOP
 
 function mousePressed(){
-    game.checkIfPressed()
+    game.olaf.checkIfPressed()
    
 }

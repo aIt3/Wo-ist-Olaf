@@ -1,34 +1,43 @@
 class Game {
     constructor(){
-        this.olaf = new Olaf()
+        this.olaf = new Olaf(100, 100)
         this.score = 0
-        this.olafPosX = 25
-        this.olafPosY = 25
-        this.olafWidth = 103.42
-        this.olafHeight = 215
+        this.olafs = []
+     
 
-       
-        
+        for(let i = 0; i < 9; i++){
+            this.olafs.push(new Olaf(100+(i*10), 100))
+        }
+        console.log(this.olafs)
     }
+
     preload() {
         this.olaf.preload()
    
     }
+
     draw(){
         clear()
         this.olaf.draw()
-        //image(game.frames[frameCount % 3], this.olafPosX, this.olafPosY, this.olafWidth, this.olafHeight)
-        //image(this.frames[frameCount % 3], this.olafPosX, this.olafPosY, this.olafWidth, this.olafHeight)
+        this.olaf.animate()
+
+      
+        
+       
+
+        for(let i = 0; i < this.olafs.length; i++){
+            this.olafs[i].draw()
+            
+        }
+
+
+        
+
+
+       
       
 
     }
-    checkIfPressed(){
-        if(mouseX > this.olafPosX && 
-            mouseX < this.olafPosX+this.olafWidth &&
-            mouseY > this.olafPosY && 
-            mouseY < this.olafPosY+this.olafHeight){
-           console.log('whoop')
-         }
-    }
+   
    
 }

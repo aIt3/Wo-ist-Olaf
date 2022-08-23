@@ -1,8 +1,8 @@
 class Olaf{
-    constructor(){
+    constructor(olafPosX, olafPosY){
         this.frames = []
-        this.olafPosX = 25
-        this.olafPosY = 25
+        this.olafPosX = olafPosX
+        this.olafPosY = olafPosY
         this.olafWidth = 103.42
         this.olafHeight = 215
       
@@ -21,9 +21,20 @@ class Olaf{
     draw() {
         image(this.frames[frameCount % 3], this.olafPosX, this.olafPosY, this.olafWidth, this.olafHeight)
     }
-
-
-
-   
+    animate(){
+        if(this.olafPosX < width){
+        this.olafPosX = this.olafPosX + 1*18
+        console.log(this.olafPosX)
+         }
+    }
+    checkIfPressed(){
+        if(mouseX > this.olafPosX && 
+            mouseX < this.olafPosX+this.olafWidth &&
+            mouseY > this.olafPosY && 
+            mouseY < this.olafPosY+this.olafHeight){
+           console.log('whoop')
+          
+         }
+    }
    
 }
