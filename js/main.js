@@ -1,9 +1,11 @@
+
 const game = new Game() 
 
 function setup(){
-    createCanvas(500, 500)
-    background('white')
-	frameRate(7)
+    let myCanvas = createCanvas(1000, 1000)
+	frameRate(5)
+    myCanvas.parent('sketch-holder')
+    myCanvas.style('display', 'block');
 
 }
 function preload() {
@@ -16,6 +18,8 @@ function draw(){
 // WENN OLAF GEFANGEN WIRD SAG WHOOP
 
 function mousePressed(){
-    game.olaf.checkIfPressed()
+    for(let i = 0; i < game.olafs.length; i++ ){
+    game.olafs[i].checkIfPressed()
+    }
    
 }

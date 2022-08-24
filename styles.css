@@ -1,16 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
 html, body {
-    margin: 0;
-    padding: 0;
-    background-color: aliceblue;
-    height:100vh;
-    width:100vw;
-    display:flex;
-    align-items: center;
-    justify-content: center;
+  height: 100%;
 
-  }
- 
   
-  canvas {
+  }
+  body{
+    margin: 0;
+    display: flex;
+  width:1200px;
+    /* This centers our sketch horizontally. */
+    justify-content: center;
+  
+    /* This centers our sketch vertically. */
+    align-items: center;
+  flex-direction: column;
+    background-color: #8bac0f;
+    color: #306230 ;
+    font-family: 'Silkscreen', cursive;
+  }
+
+
+ .gameOverImg{
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  height:100vh;
+  width:1500px;
+  z-index:3;
+  z-index:20;
+ 
+
+ }
+ .gameOver{
+  visibility: hidden;
+  position: absolute;
+  width:1500px;
+  height:100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+ }
+ .gameOver img{
+  height:800px;
+  z-index:20;
+
+ }
+ .gameOver .text{
+  width:900px;
+  height:350px;
+  background-color:#9bbc0f;
+  position:absolute;
+  border:15px solid #8bac0f;
+  margin-right:360px;
+  color:#306230;
+  padding:15px 25px;
+  font-size:24px;
+  z-index:0;
+ }
+
+ .gameOver .text a{
+  color:#9bbc0f;
+  background-color:#306230;
+  padding:10px 15px;
+ }
+
+ .gameOver .text a:hover{
+  background-color:#0f380f;
+ }
+
+  
+canvas {
     }
   
