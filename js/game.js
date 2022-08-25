@@ -49,7 +49,7 @@ class Game {
   }
 
   draw() {
-    console.log(mouseX)
+    console.log(this.score)
 
     //console.log(mouseX)
     //console.log(this.huetteBrennt)
