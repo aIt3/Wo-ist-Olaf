@@ -3,11 +3,11 @@ class Olaf {
         // this.frames = []
         // console.log(olafImages)
         this.olafCoordsX = [200, 520] 
-        this.olafCoordsY = [248, 440, 632]  
+        this.olafCoordsY = [325, 528, 732]  
         this.olafPosX = this.olafCoordsX[floor(random(0, this.olafCoordsX.length))]
         this.olafPosY = this.olafCoordsY[floor(random(0, this.olafCoordsY.length))]
-        this.olafWidth = 47.62
-        this.olafHeight = 86.1
+        this.olafWidth = 63.11
+        this.olafHeight = 114.1
         this.olafImages = olafImages
         this.olafSteps = 0
 
@@ -45,7 +45,7 @@ class Olaf {
        
     checkIfPressed() {
         if (mouseX > this.olafPosX &&
-            mouseX < this.olafPosX + this.olafWidth &&
+            mouseX < this.olafPosX + (this.olafWidth+10) &&
             mouseY > this.olafPosY &&
             mouseY < this.olafPosY + this.olafHeight) {
             
@@ -54,8 +54,6 @@ class Olaf {
             game.scoreImages.shift()
             game.olafs.shift()
             console.log(game.score)
-            game.olafs
-
 
         
     }

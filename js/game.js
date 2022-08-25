@@ -3,13 +3,13 @@ class Game {
         // VARIABLEN FÜR BILDER
         this.scoreImages = []
         this.scoreImage
-        this.scoreImageWidth = 75
-        this.scoreImageHeight = 99.42
+        this.scoreImageWidth = 105
+        this.scoreImageHeight = 139.19
         this.olafs = []
         this.olafImages = []
         this.officeImage
-        this.officeWidth = 796.3
-        this.officeHeight = 710.74
+        this.officeWidth = 850.3
+        this.officeHeight = 758.96
         //SCORE VARIABLE
         this.score = 0
         //VARIABLE FÜR RANDOM OLAF DER LOSLÄUFT
@@ -35,10 +35,10 @@ class Game {
         
         // OLAF KÖPFE FÜR SCORE         
         for (let i = 0; i < 9; i++){
-                this.scoreImages[i] = loadImage('assets/olafPoint.png')
+                this.scoreImages[i] = loadImage('assets/olafPoint4.png')
         }
         // OFFICE IMAGE
-        this.officeImage = loadImage('assets/office.png')
+        this.officeImage = loadImage('assets/office2.png')
     }
 
     draw() {
@@ -72,14 +72,14 @@ class Game {
 
            //OFFICE IMAGE WIRD ZENTRIERT GEMALT
       push()
-      translate((width/2)-(796.3/2), (height/2)-(710.74/2))
+      translate((width/2)-((this.officeWidth/2)), ((height/2)+90)-(this.officeHeight/2))
       image(this.officeImage,0, 0, this.officeWidth, this.officeHeight)
       pop()
 
 
         // OLAF SCOREKÖPFE WERDEN GEMALT
         for (let i = 0; i < this.scoreImages.length;i++){
-            image(this.scoreImages[i], 300+(i*40) ,70, this.scoreImageWidth, this.scoreImageHeight)
+            image(this.scoreImages[i], 170+(i*65) ,30, this.scoreImageWidth, this.scoreImageHeight)
           }
 
           

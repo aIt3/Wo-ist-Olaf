@@ -6,6 +6,7 @@ function setup(){
 	frameRate(5)
     myCanvas.parent('sketch-holder')
     myCanvas.style('display', 'block');
+    
 
 }
 function preload() {

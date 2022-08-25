@@ -5,20 +5,32 @@ html, body {
   
   }
   body{
-    margin: 0;
     display: flex;
-  width:1200px;
     /* This centers our sketch horizontally. */
     justify-content: center;
   
     /* This centers our sketch vertically. */
     align-items: center;
   flex-direction: column;
-    background-color: #8bac0f;
-    color: #306230 ;
+    background-color: #E7E1DC;
+    color:#1A2370;
     font-family: 'Silkscreen', cursive;
+    font-size:24px;
   }
 
+  .intro{
+    width:1100px;
+    margin-top: 300px;
+
+  }
+  .intro h1{
+
+    text-align:center;
+    font-size: 48px;
+    color:#1A2370;
+  }
+  .intro p{
+padding: 25px; }
 
  .gameOverImg{
   position: absolute;
@@ -72,5 +84,9 @@ html, body {
 
   
 canvas {
+  background-color:#CADC9F;
+  padding 15px 25px;
+  border: 50px solid #8E8C9A;
+  border-radius: 25px;
     }
   
