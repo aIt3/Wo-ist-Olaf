@@ -1,92 +1,108 @@
 @import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
-html, body {
+
+html,
+body {
   height: 100%;
 
-  
-  }
-  body{
-    display: flex;
-    /* This centers our sketch horizontally. */
-    justify-content: center;
-  
-    /* This centers our sketch vertically. */
-    align-items: center;
+
+}
+
+body {
+  display: flex;
+  /* This centers our sketch horizontally. */
+  justify-content: center;
+
+  /* This centers our sketch vertically. */
+  align-items: center;
   flex-direction: column;
-    background-color: #E7E1DC;
-    color:#1A2370;
-    font-family: 'Silkscreen', cursive;
-    font-size:24px;
-  }
+  background-color: #E7E1DC;
+  color: #1A2370;
+  font-family: 'Silkscreen', cursive;
+  font-size: 24px;
+}
 
-  .intro{
-    width:1100px;
-    margin-top: 300px;
+.intro {
+  width: 1100px;
+  margin-top: 300px;
 
-  }
-  .intro h1{
+}
 
-    text-align:center;
-    font-size: 48px;
-    color:#1A2370;
-  }
-  .intro p{
-padding: 25px; }
+.intro h1 {
 
- .gameOverImg{
+  text-align: center;
+  font-size: 48px;
+  color: #1A2370;
+}
+
+.intro p {
+  padding: 25px;
+}
+
+.gameOverImg {
   position: absolute;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  height:100vh;
-  width:1500px;
-  z-index:3;
-  z-index:20;
- 
+  height: 100vh;
+  width: 1500px;
+  z-index: 3;
+  z-index: 20;
 
- }
- .gameOver{
-  visibility: hidden;
+
+}
+
+.gameOver {
+  display: hidden;
+  opacity: 0;
+  transition: opacity 5s, visibility 5s;
   position: absolute;
-  width:1500px;
-  height:100vh;
+  width: 1500px;
+  height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-end;
- }
- .gameOver img{
-  height:800px;
-  z-index:20;
-
- }
- .gameOver .text{
-  width:900px;
-  height:350px;
-  background-color:#9bbc0f;
+}
+.gameOver .olaf{
   position:absolute;
-  border:15px solid #8bac0f;
-  margin-right:360px;
-  color:#306230;
-  padding:15px 25px;
-  font-size:24px;
-  z-index:0;
- }
+}
+.gameOver img {
+  height: 800px;
+  z-index: 20;
 
- .gameOver .text a{
-  color:#9bbc0f;
-  background-color:#306230;
-  padding:10px 15px;
- }
+}
 
- .gameOver .text a:hover{
-  background-color:#0f380f;
- }
+.gameOver .text {
+  width: 900px;
+  height: 350px;
+  background-color: #9bbc0f;
+  position: absolute;
+  border: 15px solid #8bac0f;
+  margin-right: 436px;
+  color: #306230;
+  padding: 15px 25px;
+  font-size: 24px;
+  z-index: 0;
+}
+.gameOver .text2 {
+  visibility: hidden;
+}
 
-  
+.gameOver .text a {
+  color: #9bbc0f;
+  background-color: #306230;
+  padding: 10px 15px;
+  line-height:2;
+}
+
+.gameOver .text a:hover {
+  background-color: #0f380f;
+}
+
+
 canvas {
-  background-color:#CADC9F;
-  padding 15px 25px;
+  background-color: #CADC9F;
+  padding: 15px 25px;
   border: 50px solid #8E8C9A;
   border-radius: 25px;
-    }
-  
+}
