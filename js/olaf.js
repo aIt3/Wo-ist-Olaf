@@ -50,7 +50,6 @@ class Olaf {
             mouseY > this.olafPosY &&
             mouseY < this.olafPosY + this.olafHeight) {
 
-
             game.score += 1
             game.scoreImages.shift()
             game.olafs.shift()

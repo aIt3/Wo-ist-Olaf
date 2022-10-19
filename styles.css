@@ -2,7 +2,7 @@
 
 html,
 body {
-  height: 100%;
+    margin-top: 50px;
 
 
 }
@@ -23,7 +23,6 @@ body {
 
 .intro {
   width: 1100px;
-  margin-top: 300px;
 
 }
 
